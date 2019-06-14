@@ -29,6 +29,20 @@ class App extends Component {
         this.setState({ error: "error" });
       });
   }
+
+  addSmurf = (e, smurf) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:3333/smurfs", smurf)
+      .then(res => {
+        this.setState({ smurfs: res.data });
+        this.props.history.push("/smurfs");
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
+
   render() {
     return (
       <div className="App">
