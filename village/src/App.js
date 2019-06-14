@@ -71,6 +71,7 @@ class App extends Component {
           render={props => (
             <SmurfForm
               {...props}
+              fakeProp="fakeprop"
               smurfs={this.state.smurfs}
               addSmurf={this.addSmurf}
               updateSmurf={this.updateSmurf}
