@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+  background-image: url("./village.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Navigation Bar Styling  */
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  height: 64px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: height 0.2s ease-in-out;
+  transition: height 0.2s ease-in-out;
+  height: 77px;
+}
+
+.navbar > li > a {
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  text-decoration: none;
+  padding: 24px;
+  height: 20px;
+}
+
+.navbar > li > a.activeNavButton {
+  background-color: #62cdfd;
+  color: white;
+}
+
+/* Smurf List Styling */
+
+.smurfs-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 78px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.smurfs-container ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.smurf-card {
+  width: 40%;
+  align-self: center;
+  height: 200px;
+  background-color: rgba(98, 205, 253, 0.8);
+  /* max-width: 450px;
+  min-width: 220px; */
+  margin: 50px 1%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Styling for form */
+
+.field {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.field input {
+  width: 50%;
+  height: 56px;
+  padding: 0px 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #62cdfd;
+  margin-top: 20px;
+  box-shadow: 0px 4px 20px 0px transparent;
+}
+
+.form-btn {
+  display: block;
+  padding: 10px 15px;
+  background-color: #62cdfd;
+  color: black;
+  border: 1px solid black;
+  margin: 20px auto;
+}
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #62cdfd;
+}
+
+.village-link {
+  text-decoration: underline;
+  color: black;
+  margin-top: 30px;
+}
